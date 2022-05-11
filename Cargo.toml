@@ -1,0 +1,16 @@
+[package]
+name = "minesweeper"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.7.3"
+regex = "0.2"
+substring = "1.4.5"
+terminal_size = "0.1.13"
+
+[[bin]]
+name = "minesweeper"
+path = "minesweeper.rs"
