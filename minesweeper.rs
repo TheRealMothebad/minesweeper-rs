@@ -48,7 +48,7 @@ fn main() {
     }
     //print!("Making board of size ({}, {})", bsize_x, bsize_y);
     
-    let bombs: usize = input("# of bombs: ").parse::<usize>().unwrap();
+    let bombs: usize = intput("# of bombs: ", "Please enter a number!\n");
     let board : Vec<Vec<i8>> = mk_board(bombs, bsize_x, bsize_y);
     let mut hidden : Vec<Vec<bool>> = Vec::new();
     for x in 0 .. bsize_x {
